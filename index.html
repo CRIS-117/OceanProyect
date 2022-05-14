@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--========== SWIPER BOXICONS AND CSS ==========-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+            <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+            <link rel="stylesheet" href="assets/css/styles.css">
+            <!--=============== FAVICON ===============-->
+            <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+
+            <title>OCEAN SAFE</title>
+        </head>
+        <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Ocean</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Campaign</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </nav>
+        </header>
+        <!--========== MAIN ==========-->
+        <main class="main">
+            <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                    <!--========== OCEAN 1 ==========-->
+                    <section class="oceans swiper-slide">
+                        <img src="assets/img/ocean1.jpg" alt="Ocean1" class="oceans__bg">
+
+                        <div class="oceans__container bd-container">
+                            <div class="oceans__data">
+                                <h2 class="oceans__subtitle">Ocean</h2>
+                                <h1 class="oceans__title">Atlantic Ocean</h1>
+                                <p class="oceans__description">Water from farms in Minnesota, Iowa, Illinois, Wisconsin, Missouri, Tennessee, Arkansas, Mississippi, and Louisiana flows into the Atlantic Ocean, producing a phenomenon called a dead zone.</p>
+                                <a href="#" class="oceans__button">More Info <i class='bx bx-right-arrow-alt oceans__button-icon'></i></a>
+                            </div>
+
+                            <div class="oceans__video">
+                                <div class="oceans__video-content">
+                                    <i class='bx bx-play-circle oceans__video-icon'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--========== OCEAN 2 ==========-->
+                    <section class="oceans swiper-slide">
+                        <img src="assets/img/ocean2.jpg" alt="Ocean1" class="oceans__bg">
+
+                        <div class="oceans__container bd-container">
+                            <div class="oceans__data">
+                                <h2 class="oceans__subtitle">Ocean</h2>
+                                <h1 class="oceans__title">Pacific Ocean</h1>
+                                <p class="oceans__description">It is estimated that this large island has an area that is calculated from 700 thousand square kilometers to 15 million square kilometers of garbage. This garbage island attracts waste from the coasts of North America and Asia.</p>
+                                <a href="#" class="oceans__button">More Info <i class='bx bx-right-arrow-alt oceans__button-icon'></i></a>
+                            </div>
+
+                            <div class="oceans__video">
+                                <div class="oceans__video-content">
+                                    <i class='bx bx-play-circle oceans__video-icon'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--========== OCEAN 3 ==========-->
+                    <section class="oceans swiper-slide">
+                        <img src="assets/img/ocean3.jpg" alt="Ocean1" class="oceans__bg">
+
+                        <div class="oceans__container bd-container">
+                            <div class="oceans__data">
+                                <h2 class="oceans__subtitle">Ocean</h2>
+                                <h1 class="oceans__title">Indian Ocean</h1>
+                                <p class="oceans__description">An island of garbage was discovered in the Indian Ocean in 2010. Plastic and chemical waste conform and is the third largest concentration of garbage in the oceans.</p>
+                                <a href="#" class="oceans__button">More Info <i class='bx bx-right-arrow-alt oceans__button-icon'></i></a>
+                            </div>
+
+                            <div class="oceans__video">
+                                <div class="oceans__video-content">
+                                    <i class='bx bx-play-circle oceans__video-icon'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--https://rpp.pe/mundo/medio-ambiente/cuales-son-los-mares-mas-contaminados-del-mundo-noticia-969378?ref=rpp-->
+
+                    <!--========== OCEANS POPUP ==========-->
+                    <div class="oceans__popup" id="popup">
+                        <div>
+                            <div class="oceans__popup-close" id="popup-close">
+                                <i class='bx bx-x'></i>
+                            </div>
+            
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/zgjdhp7pf-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!--========== CONTROLS ==========-->
+             <div class="controls gallery-thumbs">
+                <div class="controls__container swiper-wrapper">
+                    <img src="assets/img/ocean1.jpg" alt="" class="controls__img swiper-slide">
+                    <img src="assets/img/ocean2.jpg" alt="" class="controls__img swiper-slide">
+                    <img src="assets/img/ocean3.jpg" alt="" class="controls__img swiper-slide">
+                </div>
+            </div>
+        </main>
+        <!--========== GSAP ==========-->
+        <script src="assets/js/gsap.min.js"></script>
+
+        <!--========== SWIPER JS ==========-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+        </body>
+    </html>
