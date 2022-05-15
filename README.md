@@ -1,5 +1,5 @@
 # OceanProyect
-Es un sitio web donde que tiene la función de recaudar fondos para organizaciones o proyectos con la finalidad de operar acciones para salvar el océano y las especies que habitan en ello.
+Es un sitio web cuya funcionalidad es recaudar fondos para organizaciones o proyectos con la finalidad de operar acciones para salvar el océano y las especies que habitan en ello.
 
 ## ¿Cómo nace este proyecto?
 Este proyecto surge como una idea sobre la temática del hackathon ***Hack the ocean*** que tiene la finalidad de concientizar así como también pensar en soluciones ágiles y escalables sobre las diversas problemáticas que aquejan a los océanos mediante el uso de las diferentes tecnologías.
