@@ -17,6 +17,10 @@ fetch("https://api.fondeaeloceano.xyz/v1/projects")
 							<div class="uk-overlay uk-overlay-primary uk-position-bottom" style="padding: 5px;">
 								<h3 class="uk-margin-remove">${item.name}</h3>
 								<p class="uk-margin-remove">${truncate(item.description, 50, true)}</p>
+								<div style="position: relative; overflow: hidden;">
+									<progress class="uk-progress uk-margin-remove" style="background: #c5c5c5;" value="${item.amount_gained}" max="${item.amount}"></progress>
+									<div class="uk-width-1-1 uk-text-center uk-text-small" style="position: absolute;top: 0;right: 0; margin-top: -3px;">${item.amount_gained} USD / ${item.amount} USD</div>
+								</div>
 							</div>
 						</div>
 					</a>
@@ -38,7 +42,7 @@ fetch("https://api.fondeaeloceano.xyz/v1/projects")
 						<div class="uk-margin-small-top"><b>Amount to request:</b> ${item.amount} USD</div>
 						<div>
 							<div class="uk-child-width-1-2 uk-grid-collapse" uk-grid>
-								<div class="uk-button uk-button-primary">Contribute</div>
+								<a href="https://www.paypal.com/donate/?hosted_button_id=SG3HGAU2VM4C6" target="_blank" class="uk-button uk-button-primary">Contribute</a>
 								<div style="position: relative;">
 									<progress class="uk-progress" style="position: absolute;background: #c5c5c5;" value="${item.amount_gained}" max="${item.amount}"></progress>
 									<div class="uk-width-1-1 uk-text-center uk-text-small" style="position: absolute;top: 0;right: 0; margin-top: -3px;">${item.amount_gained} USD / ${item.amount} USD</div>
