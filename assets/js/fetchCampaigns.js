@@ -14,9 +14,9 @@ fetch("https://api.fondeaeloceano.xyz/v1/projects")
 					<a href="#project-${item.id}" uk-toggle>
 						<div class="uk-inline">
 							<img src="${item.image}" width="" height="" alt="">
-							<div class="uk-overlay uk-overlay-primary uk-position-bottom">
-								<h3>${item.name}</h3>
-								<p>${truncate(item.description, 50, true)}</p>
+							<div class="uk-overlay uk-overlay-primary uk-position-bottom" style="padding: 5px;">
+								<h3 class="uk-margin-remove">${item.name}</h3>
+								<p class="uk-margin-remove">${truncate(item.description, 50, true)}</p>
 							</div>
 						</div>
 					</a>
