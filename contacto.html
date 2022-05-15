@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--========== SWIPER BOXICONS AND CSS ==========-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+            <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+            <link rel="stylesheet" href="assets/css/styles.css">
+            <!--=============== FAVICON ===============-->
+            <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+
+            <title>OCEAN SAFE</title>
+        </head>
+        <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Ocean</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Campaign</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </nav>
+        </header>
+        <!--========== MAIN ==========-->
+        <main class="main">
+            <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                    <!--========== OCEAN 2 ==========-->
+                    <section class="oceans swiper-slide">
+                        <img src="assets/img/ocean2.jpg" alt="Ocean1" class="oceans__bg">
+
+                        <div class="oceans__container bd-container">
+                            <div class="oceans__data">
+                                <section>
+                                    <h2 class="oceans__title">Contact</h2>
+                                    <p class="oceans__subtitle"> questions, comments? Write us! We want to know about you
+                                        <form class="oceans__description" action="/accion.js" id="form1" method="post">
+                                            <label for="nombre">Name:</label>
+                                            <input type="text" id="nombre" name="nombre" required size="35" placeholder="fullname"><br><br>
+                                            <label for="telefono">Phone number:</label>
+                                            <input type="number" id="telefono" name="telefono" maxlength="10" required placeholder="phone"><br><br>
+                                            <label for="correo">Email:</label>
+                                            <input type="mail" id="correo" name="correo" required required size="44" placeholder="email"><br><br>
+                                            <textarea id="mensaje" name="mensaje" rows="4" cols="50" maxlength="200" placeholder="write down your message" required></textarea><br><br>
+                                            <input class="btn-borde" type="submit" value="Submit">
+                                            <input class="btn-borde" type="reset">
+                                        </form></p>
+                                    
+                                </section>    
+                            </div>    
+                        </div>    
+                    </section>    
+                </div>    
+            </div>
+        </main>
+        <div align="right">
+            <footer>
+                <p>Hack the Ocean LaunchX. The ocean is everything I want to be. Beautiful, mysterious, wild and free</p>
+                <p>Find us! Midtown, 611 Colon streen. Guadalajara, Jalisco, México. Phone: 3333333333</p>
+                <p>All rights reserved</p>
+            </footer>
+        </div>  
+
+        <!--========== GSAP ==========-->
+        <script src="assets/js/gsap.min.js"></script>
+
+        <!--========== SWIPER JS ==========-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+        </body>
+    </html>

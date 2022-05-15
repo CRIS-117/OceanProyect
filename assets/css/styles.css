@@ -356,3 +356,19 @@ a{
       height: 640px;
     }
 }
+
+.btn-borde {
+    padding: .375rem .75rem;
+    border: 1px solid #007bff;
+    border-radius: .25rem;
+    color: #007bff;
+    font-weight: bold;
+    transition: color .15s ease-in-out,
+      background-color .15s ease-in-out;
+  }
+  
+  .btn-borde:hover, .btn-borde:active, .btn-borde:focus {
+    color: #fff;
+    background-color: #007bff;
+    font-weight: bold;
+  }
