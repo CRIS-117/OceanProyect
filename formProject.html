@@ -11,6 +11,13 @@
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
 
+		<!-- UIkit CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css" />
+
+		<!-- UIkit JS -->
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script>
+
         <title>OCEAN SAFE</title>
     </head>
     <body>
@@ -52,67 +59,46 @@
                     <h2>Fill the fields to register your project</h2>
                 </div>
                 <div class="flex-container">
-                    <form class="formulario">
+                    <form class="uk-form">
                         <div class="formulario__seccion">
                             <label for="nombre">Name</label>
-                            <input type="text" name="nombre" id="nombre" class="formulario__input" placeholder="Name of your project">
+                            <input type="text" name="name" id="nombre" class="uk-input" required placeholder="Name of your project">
                         </div>
                         <div class="formulario__seccion">
                             <label for="responsable">Responsible</label>
-                            <input type="text" name="responsable" id="responsable" class="formulario__input" placeholder="Name of your company">
+                            <input type="text" name="responsible" id="responsable" class="uk-input" required placeholder="Name of your company">
                         </div>
                         <div class="formulario__seccion">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" class="formulario__input" placeholder="info@ocean.com">
+                            <input type="email" name="email" id="email" class="uk-input" required placeholder="info@ocean.com">
                         </div>
                         <div class="formulario__seccion">
-                            <label for="nameShort">Short name</label>
-                            <input type="text" name="nameShort" id="nameShort" class="formulario__input" placeholder="Name of your project (short)">
+                            <label for="nameShort">Association</label>
+                            <input type="text" name="association_name" id="nameShort" class="uk-input" required placeholder="Name of your association">
                         </div>
                         <div class="formulario__seccion">
                             <label for="telefono">Phone</label>
-                            <input type="tel" name="telefono" id="telefono" class="formulario__input" placeholder="(+52) 55 5555 5555">
+                            <input type="tel" name="association_phone" id="telefono" class="uk-input required" placeholder="(+52) 55 5555 5555">
                         </div>
                         <div class="formulario__seccion">
-                            <label for="tipo">Type</label>
-                            <input type="text" name="tipo" id="tipo" class="formulario__input" placeholder="Type of your project">
-                        </div>
-                        <div class="formulario__seccion">
-                            <label for="country">Country:</label>
-                            <select name="pais" id="country" class="select">
-                                <option value="1">Argentina</option>
-                                <option value="2">España</option>
-                                <option value="3">México</option>
-                                <option value="4">Guatemala</option>
-                                <option value="5">Honduras</option>
-                                <option value="6">El Salvador</option>
-                                <option value="7">Venezuela</option>
-                                <option value="8">Colombia</option>
-                                <option value="9">Cuba</option>
-                                <option value="10">Bolivia</option>
-                                <option value="11">Perú</option>
-                                <option value="12">Ecuador</option>
-                                <option value="13">Paraguay</option>
-                                <option value="14">Uruguay</option>
-                                <option value="15">Chile</option>
-                                <option value="16">United States</option>
-                                <option value="17">Canada</option>
-                                <option value="18">Russia</option>
-                                <option value="19">China</option>
-                                <option value="20">India</option>
-                                <option value="21">France</option>
-                                <option value="22">Italy</option>
-                                <option value="23">United Kingdom</option>
-                                <option value="24">Other</option>
+                            <label for="tipo">Category</label>
+                            <select name="type" id="type" class="uk-select" required>
+                                
                             </select>
                         </div>
                         <div class="formulario__seccion">
-                            <label for="correo">City</label>
-                            <input type="email" name="correo" id="correo" class="formulario__input" placeholder="Seattle">
+                            <label for="country">Country:</label>
+                            <select name="country" id="country" class="uk-select" required>
+                                
+                            </select>
+                        </div>
+                        <div class="formulario__seccion">
+                            <label for="city">City</label>
+                            <input type="email" name="city" id="city" class="uk-input" required placeholder="Seattle">
                         </div>
                         <div class="formulario__boton">
-                            <input type="reset" class="formulario__boton-input">
-                            <input type="submit" class="formulario__boton-input">
+                            <input type="submit" class="uk-button uk-button-primary">
+                            <input type="reset" class="uk-button uk-button-secondary">
                         </div>
                     </form>
                 </div>
@@ -129,5 +115,6 @@
 
             <!--=============== MAIN JS ===============-->
             <script src="assets/js/mainDonation.js"></script>
+            <script src="assets/js/fetchFormProject.js"></script>
         </body>
     </html>
