@@ -356,3 +356,25 @@ a{
       height: 640px;
     }
 }
+
+.btn-borde {
+    padding: .375rem .75rem;
+    border: 1px solid #007bff;
+    border-radius: .25rem;
+    color: #007bff;
+    transition: color .15s ease-in-out,
+        background-color .15s ease-in-out;
+    font-weight: bold; 
+    border-radius: 35%;   
+}
+  
+.btn-borde:hover, .btn-borde:active, .btn-borde:focus {
+    color: #fff;
+    background-color: #007bff;
+    font-weight: bold;   
+    border-radius: 15%; 
+}
+
+#form1 {
+    border-radius: 15%;
+}
