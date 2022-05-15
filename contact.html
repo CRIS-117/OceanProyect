@@ -10,6 +10,13 @@
             <!--=============== FAVICON ===============-->
             <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
 
+            <!-- UIkit CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css" />
+
+            <!-- UIkit JS -->
+            <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script>
+
             <title>OCEAN SAFE</title>
         </head>
         <body>
@@ -40,23 +47,24 @@
                     <section class="oceans swiper-slide">
                         <img src="assets/img/ocean1.jpg" alt="Ocean1" class="oceans__bg">
 
-                        <div class="oceans__container bd-container">
+                        <div class="oceans__container bd-container" style="grid-template-columns: auto;">
                             <div class="oceans__data">
                                 <section>
                                     <h2 class="oceans__title">Contact</h2>
-                                    <p class="oceans__subtitle"> questions, comments? Write us! We want to know about you
-                                        <form class="oceans__description" action="/accion.js" id="form1" method="post">
+                                    <div class="uk-flex uk-child-width-1-2" uk-grid>
+                                        <form class="oceans__description uk-form" action="/accion.js" id="form1" method="post">
                                             <label for="nombre">Name:</label>
-                                            <input type="text" id="form1" name="nombre" required size="35" placeholder="fullname"><br><br>
+                                            <input type="text" class="uk-input uk-form-small" id="form" name="nombre" required size="35" placeholder="fullname"><br><br>
                                             <label for="telefono">Phone number:</label>
-                                            <input type="number" id="form1" name="telefono" maxlength="10" required placeholder="phone"><br><br>
+                                            <input type="number" class="uk-input uk-form-small" id="form" name="telefono" maxlength="10" required placeholder="phone"><br><br>
                                             <label for="correo">Email:</label>
-                                            <input type="mail" id="form1" name="correo" required required size="44" placeholder="email"><br><br>
-                                            <textarea id="form1" name="mensaje" rows="4" cols="50" maxlength="200" placeholder="write down your message" required></textarea><br><br>
-                                            <input class="btn-borde" type="submit" value="Submit">
-                                            <input class="btn-borde" type="reset">
-                                        </form></p>
-                                    
+                                            <input type="mail" class="uk-input uk-form-small" id="form" name="correo" required required size="44" placeholder="email"><br><br>
+                                            <textarea id="form" class="uk-textarea uk-form-small" name="mensaje" rows="4" cols="50" maxlength="200" placeholder="write down your message" required></textarea><br><br>
+                                            <input class="uk-button uk-button-primary" type="submit" value="Submit">
+                                            <input class="uk-button uk-button-secondary" type="reset" value="Reset">
+                                        </form>
+                                        <p class="oceans__subtitle"> questions, comments? Write us! We want to know about you</p>
+                                    </div>
                                 </section>    
                             </div>    
                         </div>    
