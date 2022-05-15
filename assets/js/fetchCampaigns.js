@@ -36,6 +36,15 @@ fetch("https://api.fondeaeloceano.xyz/v1/projects")
 						<b>Full description:</b>
 						<div uk-overflow-auto>${item.description}</div>
 						<div class="uk-margin-small-top"><b>Amount to request:</b> ${item.amount} USD</div>
+						<div>
+							<div class="uk-child-width-1-2 uk-grid-collapse" uk-grid>
+								<div class="uk-button uk-button-primary">Contribute</div>
+								<div style="position: relative;">
+									<progress class="uk-progress" style="position: absolute;background: #c5c5c5;" value="${item.amount_gained}" max="${item.amount}"></progress>
+									<div class="uk-width-1-1 uk-text-center uk-text-small" style="position: absolute;top: 0;right: 0; margin-top: -3px;">${item.amount_gained} USD / ${item.amount} USD</div>
+								</div>
+							</div>
+						</div>
 						<div class="uk-margin-small-top"><b>Responsible:</b> ${item.responsible}</div>
 						<div class="uk-margin-small-top"><b>Email:</b> ${item.email}</div>
 						<div class="uk-margin-small-top"><b>Asociation:</b> ${item.association_name}</div>
