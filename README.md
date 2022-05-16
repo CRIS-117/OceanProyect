@@ -29,7 +29,7 @@ Frontend:
 #### Autores:
 
 - Cristofer Alan Ángeles Soriano
-- Fernando de la Fuente
+- Fernando de Lafuente Quiroz
 - Oscar Omar Gutiérrez López
 - Sergio López Loya
 - Ramiro Zetina Suriano
